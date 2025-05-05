@@ -72,7 +72,7 @@ const App = () => {
               <img src={image} alt={name} />
           </div>
 
-          <h4 className="author" id={author-`${currentIndex + 1}`}>
+          <h4 className="author" id={`author-${currentIndex + 1}`}>
                 {name}
             </h4>
 
