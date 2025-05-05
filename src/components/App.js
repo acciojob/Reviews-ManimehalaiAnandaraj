@@ -65,14 +65,17 @@ const App = () => {
     const { name, job, image, text } = reviewsData[currentIndex];
 
     return (
+        <>
       <div className="review">
           <h2 id="review-heading">Our Reviews</h2>
           <div className="person-img">
               <img src={image} alt={name} />
           </div>
-          <h4 className="author" id=`{author-${currentIndex + 1}}`>
-              {name}
-          </h4>
+
+          <h4 className="author" id={author-`${currentIndex + 1}`}>
+                {name}
+            </h4>
+
           <p className="job">{job}</p>
           <p className="info">{text}</p>
           <div className="btn-container">
@@ -87,6 +90,7 @@ const App = () => {
               </button>
           </div>
       </div>
+      </>
   );
 
 };
